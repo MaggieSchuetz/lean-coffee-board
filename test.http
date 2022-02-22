@@ -1,0 +1,36 @@
+GET http://example.com/
+
+### 
+GET https://jsonplaceholder.typicode.com/posts
+
+###
+POST https://jsonplaceholder.typicode.com/posts
+Content-Type: application/json
+
+{
+    "title": "foo",
+    "body": "bar",
+    "userId": "1"
+}
+###
+
+PUT https://jsonplaceholder.typicode.com/posts/1
+Content-Type: application/json
+
+{
+    "id": "1",
+    "title":"Foo",
+    "body" : "bar",
+    "userId": "1"
+}
+
+###
+PATCH https://jsonplaceholder.typicode.com/posts/1
+Content-Type: application/json
+
+{
+    "title":"Foo"  // ABSOLUTELY NO COMMA IN THE LAST LINE
+}
+
+### 
+DELETE https://jsonplaceholder.typicode.com/posts/1
